@@ -4,6 +4,7 @@ from queue import PriorityQueue
 def spacetravel( n, E, S, a, b ):
     # tu prosze wpisac wlasna implementacje
     visited = [None] * n
+    visited[a] = 0
     neigh = [ [] for _ in range(n)]
     for i in E:
         neigh[i[0]].append((i[2],i[1]))
